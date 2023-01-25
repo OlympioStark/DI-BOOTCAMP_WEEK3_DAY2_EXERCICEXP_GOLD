@@ -1,5 +1,5 @@
 /**
- * @author ezekiel kouassi
+ * @author Gilles-Chris Maké
  */
 
 const root = document.getElementById('root');
@@ -26,20 +26,20 @@ root.appendChild(form);
 
 // Add an event listener to the form
 form.addEventListener('submit', event => {
-  // Prevent the form from being submitted
-  event.preventDefault();
+    // Prevent the form from being submitted
+    event.preventDefault();
 
-  // Get the value of the input element
-  const item = input.value;
+    // Get the value of the input element
+    const item = input.value;
 
-  // Add the item to the shopping list
-  shoppingList.push(item);
+    // Add the item to the shopping list
+    shoppingList.push(item);
 
-  // Clear the input
-  input.value = '';
+    // Clear the input
+    input.value = '';
 
-  // Log the shopping list to the console
-  console.log(shoppingList);
+    // Log the shopping list to the console
+    console.log(shoppingList);
 });
 
 
@@ -51,9 +51,9 @@ form.appendChild(clearAllButton);
 
 // Add an event listener to the Clear All button
 clearAllButton.addEventListener('click', () => {
-  // Clear the shopping list
-  shoppingList.length = 0;
+    // Clear the shopping list
+    shoppingList.length = 0;
 
-  // Log the shopping list to the console
-  console.log(shoppingList);
+    // Log the shopping list to the console
+    console.log(shoppingList);
 });
